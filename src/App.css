@@ -1,0 +1,15 @@
+@import 'primereact/resources/themes/saga-blue/theme.css';
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
+@import 'primeflex/primeflex.css';
+
+.filas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10rem;
+}
+
+.custom-card-height {
+    height: 35rem; /* Ajusta la altura según tus necesidades */
+}
