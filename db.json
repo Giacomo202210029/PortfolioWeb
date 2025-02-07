@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "name": "Gestión de Empleados",
+      "description": "ala",
+      "color": "success",
+      "technology": ["VueJS", "NodeJS"]
+    },
+    {
+      "name": "Gestión de Expedientes Legales",
+      "description": "ala",
+      "color": "success",
+      "technology": ["VueJS", "NodeJS", "MySQL"]
+    },
+    {
+      "name": "Fit App",
+      "description": "ala",
+      "color": "success",
+      "technology": ["React", "Spring"]
+    }
+  ]
+}
