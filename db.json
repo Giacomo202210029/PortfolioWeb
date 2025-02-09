@@ -2,21 +2,28 @@
   "projects": [
     {
       "name": "Gestión de Empleados",
-      "description": "ala",
-      "color": "success",
-      "technology": ["VueJS", "NodeJS"]
+      "description": "Aplicación Web destinada a la gestión de asistencia de empleados, generación de reportes y asignación de horarios de trabajo.",
+      "technology": [
+        { "name": "VueJS", "color": "#41B883" },
+        { "name": "NodeJS", "color": "#6BBF47" }
+      ]
     },
     {
-      "name": "Gestión de Expedientes Legales",
-      "description": "ala",
-      "color": "success",
-      "technology": ["VueJS", "NodeJS", "MySQL"]
+      "name": "Gestión de Hoteles",
+      "description": "SweetManager es una aplicación móvil destinada a la gestión hotelera: Habitaciones, Trabajadores, Mensajes y Reservas. ",
+      "technology": [
+        { "name": "Flutter", "color": "#69B7F9" },
+        { "name": ".Net", "color": "#512BD4" },
+        { "name": "Firebase", "color": "#FFCB2E" },
+        { "name": "MySQL", "color": "#005263" }
+      ]
     },
     {
-      "name": "Fit App",
-      "description": "ala",
-      "color": "success",
-      "technology": ["React", "Spring"]
+      "name": "Still Working!",
+      "description": "",
+      "technology": [
+        { "name": "???", "color": "#6BC694" }
+      ]
     }
   ]
-}
+  }
