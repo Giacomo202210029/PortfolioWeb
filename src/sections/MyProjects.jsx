@@ -37,19 +37,17 @@ const MyProject = () => {
 
 
     return (
-        <div>
-            <h2>Mis Proyectos</h2>
-            <button onClick={clickbutton}>{counter}</button>
-            <p>{counter2}</p>
+        <section className="SeccionProyectos">
+            <h2 className="tituloProyecto">C:/Mis Proyectos</h2>
             <div className="filas">
             {projects.map((project, index) => (
                 <div key={index}>
                     <AdvancedCard name = {project.name} description={project.description}
-                                  color={project.color} technology={project.technology} />
+                                   technology={project.technology} />
                 </div>
             ))}
             </div>
-        </div>
+        </section>
     )
 }
 
