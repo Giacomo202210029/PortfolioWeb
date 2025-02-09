@@ -8,7 +8,7 @@ const App = () => {
     return (
         <div className="background">
             <Menu/>
-            <AboutMe name=" Giacomo Zoppi Rodriguez"/>
+            <AboutMe name=" Giacomo Zoppi"/>
             <MyProjects/>
             <ContactMe/>
 
