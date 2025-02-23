@@ -2,11 +2,18 @@
   "projects": [
     {
       "name": "Gestión de Empleados",
-      "description": "Aplicación Web destinada a la gestión de asistencia de empleados, generación de reportes y asignación de horarios de trabajo.",
+      "description": "Aplicación de gestión de empleados para JyP Periféricos. Con una interfaz desktop, los administradores pueden configurar áreas de trabajo, personalizar horarios y visualizar gráficos de asistencia y ubicación en tiempo real. La versión móvil permite a los empleados registrar entradas y salidas, enviar mensajes y ajustar sus horarios, optimizando la comunicación interna y la eficiencia operativa.",
       "technology": [
         { "name": "VueJS", "color": "#41B883" },
         { "name": "NodeJS", "color": "#6BBF47" }
-      ]
+      ],
+      "images": [
+        { "itemImageSrc": "/assets/trabajo.png", "alt": "Imagen B1" },
+        { "itemImageSrc": "/assets/gestiontrabajadores.png", "alt": "Imagen B2" },
+        { "itemImageSrc": "/assets/chat.png", "alt": "Imagen B4" },
+        { "itemImageSrc": "/assets/localizations.png", "alt": "Imagen B5" }
+      ],
+      "link": "https://hello-moto-frontend.vercel.app/"
     },
     {
       "name": "Gestión de Hoteles",
@@ -16,13 +23,11 @@
         { "name": ".Net", "color": "#512BD4" },
         { "name": "Firebase", "color": "#FFCB2E" },
         { "name": "MySQL", "color": "#005263" }
-      ]
-    },
-    {
-      "name": "Still Working!",
-      "description": "",
-      "technology": [
-        { "name": "???", "color": "#6BC694" }
+      ],
+      "images": [
+        { "itemImageSrc": "https://example.com/proyectoB1.jpg", "alt": "Imagen B1" },
+        { "itemImageSrc": "https://example.com/proyectoB2.jpg", "alt": "Imagen B2" },
+        { "itemImageSrc": "https://example.com/proyectoB3.jpg", "alt": "Imagen B3" }
       ]
     }
   ]

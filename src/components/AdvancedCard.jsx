@@ -6,23 +6,52 @@ import {Galleria} from "primereact/galleria";
 
 
 export default function AdvancedCard(props) {
-    const images = [
-        { itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria1.jpg', alt: 'Image 1' },
-        { itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria2.jpg', alt: 'Image 2' },
-        { itemImageSrc: 'https://primefaces.org/cdn/primereact/images/galleria/galleria3.jpg', alt: 'Image 3' }
-    ];
+    const images = props.images;
+
 
     const itemTemplate = (item) => {
-        return <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', display: 'block' }} />;
+        return (
+            <div style={{
+                width: '35rem',
+                height: '16rem',
+                overflow: 'hidden',
+                position: 'relative'
+            }}>
+                <img
+                    src={item.itemImageSrc}
+                    alt={item.alt}
+                    style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        display: 'block'
+                    }}
+                />
+            </div>
+        );
     };
 
+
+
+
     const header = (
-        <Galleria value={images} item={itemTemplate} showItemNavigators showThumbnails={false} style={{ height: '16rem' }} />
+        <Galleria
+            value={images}
+            item={itemTemplate}
+            showItemNavigators
+            circular
+            showThumbnails={false}
+        />
     );
+
 
     const footer = (
         <div className="card-footer">
-            <Button label="Ver Más" icon="pi pi-check" />
+            <Button
+                label="Ver Más"
+                icon="pi pi-external-link"
+                onClick={() => window.open(props.link, '_blank')}
+            />
         </div>
     );
 
@@ -34,7 +63,9 @@ export default function AdvancedCard(props) {
                         <Tag  key={index} className="tag" style={{ backgroundColor: tech.color }} value={tech.name}></Tag>
                     ))}
                 </p>
-                <p>{props.description}</p>
+                <p style={{fontSize: '1.2rem', lineHeight: '2.2rem'}}>
+                    {props.description}
+                </p>
             </Card>
         </div>
     )

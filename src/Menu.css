@@ -1,0 +1,31 @@
+/* Contenedor del Menú */
+.menubar-container {
+    padding: 1.5rem 10rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+}
+
+/* Personalización del Menubar */
+.custom-menubar {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.menu-logo {
+    height: 40px; /* Tamaño del logo */
+}
+
+/* Estilos de los enlaces del menú */
+.p-menubar-root-list > .p-menuitem {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000; /* Color negro */
+    transition: color 0.3s ease;
+}
+
+/* Hover sobre los enlaces */
+.p-menubar-root-list > .p-menuitem:hover {
+    color: #333; /* Tono más oscuro */
+}

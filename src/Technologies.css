@@ -1,0 +1,41 @@
+/* Sección principal */
+.tech-container {
+    text-align: center;
+
+}
+
+/* Título */
+.tech-title {
+    font-size: 2rem;
+    color: var(--letras);
+}
+
+/* Grid de Tecnologías */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: -5rem;
+}
+
+/* Tarjeta de cada tecnología */
+.tech-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-card:hover {
+    transform: scale(1.1);
+}
+
+/* Iconos */
+.tech-icon {
+    font-size: 2rem;
+    color: #69b7f9;
+
+}
+
+/* Nombre de la tecnología */
+.tech-card p {
+    font-size: 1rem;
+    color: #fff;
+}

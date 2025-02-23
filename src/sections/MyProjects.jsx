@@ -2,6 +2,7 @@
 import {useEffect, useState} from "react";
 import projectService from "../services/projectService.js";
 import AdvancedCard from "../components/AdvancedCard.jsx";
+import ContactMe from "./ContactMe.jsx";
 
 let projects=[]
 
@@ -38,17 +39,27 @@ const MyProject = () => {
 
     return (
         <section className="SeccionProyectos">
-            <h2 className="tituloProyecto">C:/Mis Proyectos</h2>
+            <h2 className="tituloProyecto"><span className="highlight">C:\</span>Mis Proyectos</h2>
             <div className="filas">
-            {projects.map((project, index) => (
-                <div key={index}>
-                    <AdvancedCard name = {project.name} description={project.description}
-                                   technology={project.technology} />
-                </div>
-            ))}
+                {projects.map((project, index) => (
+                    <div key={index}>
+                        <AdvancedCard
+                            name={project.name}
+                            description={project.description}
+                            technology={project.technology}
+                            images={project.images}
+                            link={project.link}
+                        />
+                    </div>
+                ))}
+            </div>
+            <h2 className="tituloProyecto">D:\Contacto</h2>
+            <div id="contactame">
+                <ContactMe />
             </div>
         </section>
     )
+
 }
 
 export default MyProject
